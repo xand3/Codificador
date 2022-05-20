@@ -4,11 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/template.css">
-    <script src="js/main.js"></script>
-    <title>Cifra de César</title>
+    <script defer src="js/main.js"></script>
+    <title>Codificador</title>
 </head>
 <body>
-    
+    <header class="container">
+        <h1>Codificador / Descodificar</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main">
+                <div class="main-top">
+                    <div class="select">
+                        <p>Selecione aqui o método de codificação</p>
+                        <select name="selecionar" id="select">
+                            <option id="cesar" value="cesar">Cifra de César</option>
+                            <option id="base" value="base">Base64</option>
+                        </select>
+                    </div>
+
+                    <div class="select-radio">
+                        <div class="radios">
+                            <input type="radio" checked name="escolher" id="codificar">CODIFICAR
+                        </div>
+                        <div class="radios">
+                            <input type="radio" name="escolher" id="Descodificar">DESCODIFICAR
+                        </div>
+                    </div>
+                    <div class="selected">
+                        <p id="selected"></p>
+                    </div>
+                    
+                </div>
+                <div class="textarea">
+                    <div class="input">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="output">
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button class="button" role="button">
+                        CODIFICAR MENSAGEM
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
+
+
